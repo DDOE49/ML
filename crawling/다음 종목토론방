@@ -1,0 +1,42 @@
+# 다음 종목토론방
+
+
+# col_list : 날짜 및 시간, 제목, 본문, 작성자, 추천, 반대, 댓글, 댓글 작성자, 댓글 작성 시간
+
+'DATE_TIME' : 날짜 및 시간
+'TITLE' : 제목
+'CONTENT' : 본문
+'NICKNAME' : 작성자
+'LIKE': 추천
+'UNLIKE' : 반대
+'COMMENT' : 댓글
+'COMMENT_NICK_NAME' : 댓글 작성자
+'COMMENT_DATE_TIME' : 댓글 작성 시간
+
+
+
+
+
+KOSPI
+KOSDAQ
+
+
+UP_DOWN_TOP : 등락율 상위
+UP_DOWN_BOTTOM : 등락율 하위
+
+rising stock : 상승주
+decline stock : 하락주
+
+foreigner
+buy
+sell
+
+
+# 등락율 상위업종
+UP_DOWN_TOP_KOSPI_TITLE, UP_DOWN_TOP_KOSPI_PER, UP_DOWN_TOP_KOSDAQ_TITLE, UP_DOWN_TOP_KOSDAQ_PER
+# 상승종목
+RISING_STOCK_KOSPI_TITLE, RISING_STOCK_KOSPI_PER, RISING_STOCK_KOSDAQ_TITLE, RISING_STOCK_KOSDAQ_PER
+# 외국인 순매수
+FOREIGNER_BUY_KOSPI_TITLE, FOREIGNER_BUY_KOSPI_PER, FOREIGNER_BUY_KOSDAQ_TITLE, FOREIGNER_BUY_KOSDAQ_PER
+# 기관 순매수
+ORGAN_BUY_KOSPI_TITLE, ORGAN_BUY_KOSPI_PER, ORGAN_BUY_KOSDAQ_TITLE, ORGAN_BUY_KOSDAQ_PER
