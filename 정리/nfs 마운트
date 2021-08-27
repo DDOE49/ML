@@ -1,0 +1,53 @@
+# nfs마운트
+# fatab설정
+
+
+
+# rpm 설치
+apt install rpm
+
+# nfs 서버 패키지 프로그램 설치
+apt-get install nfs-common nfs-kernel-server rpcbind portmap
+
+# nfs서버확인
+dpkg -l | grep nfs
+dpkg -l | grep rpc
+(nfs-common, nfs-kernel-server, rpcbind 확인)
+
+systemctl status nfs-server
+
+# 클라이언트 IP 주소
+hostname -I
+
+# 마운트가능하게할 디렉토리 설정
+/etc/exports
+
+# 마운트(132에서)                   공유하는 다른 서버 dir                    공유받을 현재 서버 dir
+mount 106.248.49.62:/data/public/project/dev001/komoranDictionary /data/termManager/komoran-dictionary
+
+# 자동 마운트 설정
+/etc/fstab
+
+# 사용중인 fort 번호 확인
+rpcinfo -p
+
+# exports된 mount 정보 확인
+showmount
+showmont -e ip
+
+# 강제 언마운트(마운트 된 것도 언마우늩 된 것처럼 보여줌)
+umount -l dir
+
+# 강제 언마운트 한 dir 완전 언마운트
+fuser -km dir
+
+
+
+132서버 <<< 2205nfs
+132                   2205
+192.168.122.1         
+
+
+106.248.49.62
+192.168.0.97  98
+mount -t nfs 106.248.49.62:/data/public/project/dev001/komoranDictionary /data/termManager/komoran-dictionary
